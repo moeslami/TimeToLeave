@@ -1,9 +1,21 @@
 <ion-navbar *navbar>
   <ion-title>
-  Your Location
+    Your Location
   </ion-title>
 </ion-navbar>
 
 <ion-content padding class="from">
-  
+  <ion-item>
+    <ion-label floating> Your Location</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-card>
+    <ion-card-content>
+      The selected address goes here...
+    </ion-card-content>
+  </ion-card>
+  <button block>
+  <ion-icon name="pin"></ion-icon>
+  To
+</button>
 </ion-content>

@@ -1,10 +1,24 @@
-
 <ion-navbar *navbar>
   <ion-title>
     Where Do You Want to Go
   </ion-title>
 </ion-navbar>
-
-<ion-content class="to">
-
+<ion-content padding class="to">
+  <ion-item>
+    <ion-label floating>To</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-card>
+    <ion-card-content>
+      The selected address goes here...
+    </ion-card-content>
+  </ion-card>
+ <button block>
+  <ion-icon name="car"></ion-icon>
+  Drive
+</button>
+<button block>
+  <ion-icon name="bus"></ion-icon>
+  Public Transport
+</button> 
 </ion-content>

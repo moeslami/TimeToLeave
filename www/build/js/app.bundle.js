@@ -88164,8 +88164,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ionic_angular_1 = require('ionic-angular');
 var ionic_native_1 = require('ionic-native');
 var tabs_1 = require('./pages/tabs/tabs');
-// import {provide} from '@angular/core';
-// import {ANGULAR2_GOOGLE_MAPS_PROVIDERS, LazyMapsAPILoaderConfig} from 'angular2-google-maps/core';
 var MyApp = (function () {
     function MyApp(platform) {
         this.rootPage = tabs_1.TabsPage;
@@ -88173,12 +88171,6 @@ var MyApp = (function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
             ionic_native_1.StatusBar.styleDefault();
-            // load gogle places
-            // provide(LazyMapsAPILoaderConfig, {useFactory: () => {
-            //   let config = new LazyMapsAPILoaderConfig();
-            //   config.libraries = ['places'];
-            //   return config;
-            // }});
         });
     }
     MyApp = __decorate([

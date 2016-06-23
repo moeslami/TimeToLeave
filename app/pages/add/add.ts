@@ -2,10 +2,10 @@ import {Page} from 'ionic-angular';
 import { GooglePlaceAutocompleteDirective } from '../../directives/google-place-autocomplete-directive';
 
 @Page({
-  templateUrl: 'build/pages/from/from.html',
+  templateUrl: 'build/pages/add/add.html',
   directives: [GooglePlaceAutocompleteDirective]
 })
-export class FromPage {
+export class AddPage {
   constructor() {
 
   }

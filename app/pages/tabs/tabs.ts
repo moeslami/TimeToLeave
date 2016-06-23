@@ -1,7 +1,6 @@
 import {Page} from 'ionic-angular';
-import {FromPage} from '../From/From';
-import {ToPage} from '../To/To';
-import {RoutesPage} from '../Routes/Routes';
+import {WatchListPage} from '../watchlist/watchlist';
+import {AddPage} from '../add/add';
 
 
 @Page({
@@ -10,7 +9,6 @@ import {RoutesPage} from '../Routes/Routes';
 export class TabsPage {
   // this tells the tabs component which Pages
   // should be each tab's root Page
-  tab1Root: any = FromPage;
-  tab2Root: any = ToPage;
-  tab3Root: any = RoutesPage;
+  watchListRoot: any = WatchListPage;
+  AddPageRoot: any = AddPage;
 }

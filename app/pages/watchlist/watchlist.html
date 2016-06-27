@@ -9,9 +9,6 @@
   <ion-icon name="add"></ion-icon>add a route to watch
 </button>
 <ion-list>
-  <ion-item>Item 1</ion-item>
-  <ion-item>Item 2</ion-item>
-  <ion-item>Item 3</ion-item>
-  <ion-item>Item 4</ion-item>
+  <ion-item *ngFor="let item of watchlist">{{item.from}}-{{item.id}}</ion-item>
   </ion-list>
 </ion-content>

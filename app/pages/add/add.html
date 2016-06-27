@@ -1,6 +1,6 @@
 <ion-navbar *navbar>
   <ion-title>
-    Your Location
+    My Watch List
   </ion-title>
 </ion-navbar>
 
@@ -8,30 +8,29 @@
 
   <ion-item>
     <ion-label floating>From</ion-label>
-    <ion-input type="text" google-place-autocomplete >
+    <ion-input type="text" google-place-autocomplete [(ngModel)]="item.from">
     </ion-input>
   </ion-item>
   <ion-item>
     <ion-label floating>To</ion-label>
-    <ion-input type="text" google-place-autocomplete >
+    <ion-input type="text" google-place-autocomplete [(ngModel)]="item.to">
     </ion-input>
   </ion-item>
   <ion-item>
-  <ion-label>Avoid Tolls</ion-label>
-  <ion-checkbox dark checked="true"></ion-checkbox>
-</ion-item>
-<ion-item>
-  <ion-label>Current Commute Time</ion-label>
-  <ion-badge item-right>1 hr 26 min</ion-badge>
-</ion-item>
-<ion-item>
-  <ion-label>Desired Commute Time</ion-label>
-  <ion-input type="text">
+    <ion-label>Avoid Tolls</ion-label>
+    <ion-checkbox dark checked="true" [(ngModel)]="item.prefs.avoidTolls"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Current Commute Time</ion-label>
+    <ion-badge item-right>1 hr 26 min</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Desired Commute Time</ion-label>
+    <ion-input type="text">
     </ion-input>
-</ion-item>
- 
-  <button block>
-  <ion-icon name="pin"></ion-icon>
-  Add To Watch
-</button>
+  </ion-item>
+
+  <button block (click) = "add()">
+    <ion-icon name="pin"></ion-icon> Add To Watch
+  </button>
 </ion-content>

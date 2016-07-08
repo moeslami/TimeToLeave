@@ -1,16 +1,16 @@
 import {Page, NavController} from 'ionic-angular';
 import {AddPage} from '../add/add'
-import {Repo} from '../../services/repo'
+import {WatchlistRepo} from '../../services/watchlist-repo'
 import {WatchItem} from '../../common/watchitem'
 @Page({
   templateUrl: 'build/pages/watchlist/watchlist.html',
-  providers: [Repo]
+  providers: [WatchlistRepo]
 })
 export class WatchListPage {
   watchlist: WatchItem[];
   
-  constructor(private nav: NavController, private repo:Repo) {
-      this.watchlist = this.repo.getList();
+  constructor(private nav: NavController, private watchlistRepo:WatchlistRepo) {
+      this.watchlist = this.watchlistRepo.getList();
   }
   
   addNewRouteWatch(){

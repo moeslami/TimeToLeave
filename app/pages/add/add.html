@@ -7,13 +7,13 @@
 <ion-content padding class="add">
 
   <ion-item>
-    <ion-label floating>From</ion-label>
-    <ion-input type="text" google-place-autocomplete [(ngModel)]="item.from">
+    <ion-label >From</ion-label>
+    <ion-input type="text" google-place-autocomplete [(ngModel)]="item.from.formattedAddress" placeholder="My Current Location" (setAddress) = "getFromAddress($event)">
     </ion-input>
   </ion-item>
   <ion-item>
-    <ion-label floating>To</ion-label>
-    <ion-input type="text" google-place-autocomplete [(ngModel)]="item.to">
+    <ion-label >To</ion-label>
+    <ion-input type="text" google-place-autocomplete [(ngModel)]="item.to.formattedAddress" (setAddress) = "getToAddress($event)">
     </ion-input>
   </ion-item>
   <ion-item>
